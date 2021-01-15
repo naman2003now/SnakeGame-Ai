@@ -31,8 +31,11 @@ def gameLoop():
     refreshScreen()
     global direction
     global x, y
-    if direction == "D":
-        x += 1
+    
+    #U = up, D = Down , L=Left, R=right
+    
+    if direction == "U":
+        x -= 1
     drawRect(SnakeColor, (x, y))
 
 while True:
